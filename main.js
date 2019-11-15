@@ -9,10 +9,12 @@ let mainWindow;
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({
+    alwaysOnTop: true,
     width: 800,
     height: 600,
     frame: false,
     resizable: false,
+    skipTaskbar: true,
     webPreferences: {
       nodeIntegration: true
     }
@@ -49,5 +51,7 @@ app.on("activate", function() {
   if (mainWindow === null) createWindow();
 });
 
-// Hide the App from Dock
-app.dock.hide();
+if (process.platform == "darwin") {
+  // Hide the App from Docks
+  app.dock.hide();
+}
