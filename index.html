@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <meta
+      http-equiv="X-Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <title>Student Computer Agreement</title>
+  </head>
+  <body>
+    <img src="./logo.png" />
+    <h1>Information Technology and Computing Services</h1>
+    <h1>Student Computer Labs</h1>
+    <h3>By clicking Accept below, you acknowledge this statement:</h3>
+    <i>
+      ECU computing services (including, but not limited to, ECU computing and
+      printing systems and the ECU network) are provided “as-is” and ECU makes
+      no, and expressly disclaims any and all, representations and warranties
+      whatsoever, express or implied, concerning the ECU computing services and
+      your use thereof, including but not limited to the warranties of
+      merchantability or fitness for a particular purpose; that the ECU
+      computing services will function as intended; be uninterrupted or
+      error-free; be free from malware or viruses or other malicious software,
+      that your use of the ECU computing services will not infringe third-party
+      rights; or that the ECU computing services will be secure from
+      unauthorized third-party access. Any business or other personal
+      transactions undertaken by you using ECU Computing Services, including,
+      but not limited to, those involving the use of credit or debit cards or
+      access to or transmission of confidential personal information, such as
+      healthcare or financial information, are done at your own risk. By using
+      the ECU computing services you expressly agree to hold harmless and
+      covenant not to sue East Carolina University for and against any and all
+      claims, injuries, or damages arising from or relating to your use of the
+      ECU computing services.
+    </i>
+    <button id="close-btn">Accept</button>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
