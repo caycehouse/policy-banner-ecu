@@ -25,14 +25,21 @@ button {
 
 i {
   display: block;
+  font-size: 10px;
 }
 
 h1 {
   color: rgb(90, 45, 127);
+  font-size: 30px;
 }
 
 h3 {
   color: rgb(255, 200, 46);
+}
+
+h4 {
+  color: rgb(217, 83, 79);
+  font-size: 14px;
 }
 
 img {
