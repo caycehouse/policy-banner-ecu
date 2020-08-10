@@ -1,7 +1,7 @@
 {
   "name": "policy-banner-ecu",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "A policy banner app for East Carolina University",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
@@ -25,16 +25,9 @@
       "category": "Utility"
     }
   },
-  "repository": "https://github.com/electron/electron-quick-start",
-  "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial",
-    "demo"
-  ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "repository": "https://github.com/caycehouse/policy-banner-ecu.git",
+  "author": "caycehouse",
+  "license": "GPLv3",
   "devDependencies": {
     "electron": "^9.2.0",
     "electron-builder": "^22.8.0"
