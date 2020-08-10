@@ -5,8 +5,25 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "postinstall": "electron-builder install-app-deps",
+    "dist": "electron-builder --mac --windows --linux",
+    "release": "electron-builder --mac --windows --linux --publish always"
+  },
+  "build": {
+    "appId": "edu.ecu.policy-banner-ecu",
+    "productName": "policy-banner-ecu",
+    "mac": {
+      "category": "public.app-category.utilities"
+    },
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
