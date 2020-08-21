@@ -11,7 +11,6 @@ function createWindow() {
     width: 800,
     height: 600,
     frame: false,
-    resizable: false,
     skipTaskbar: true,
     webPreferences: {
       contextIsolation: true,
@@ -20,6 +19,9 @@ function createWindow() {
       worldSafeExecuteJavaScript: true
     }
   });
+
+  mainWindow.maximize();
+  mainWindow.setResizable(false);
 
   // and load the index.html of the app.
   mainWindow.loadFile("index.html");
