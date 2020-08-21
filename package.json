@@ -27,7 +27,7 @@
   },
   "repository": "https://github.com/caycehouse/policy-banner-ecu.git",
   "author": "caycehouse",
-  "license": "GPLv3",
+  "license": "GPL-3.0-or-later",
   "devDependencies": {
     "electron": "^9.2.0",
     "electron-builder": "^22.8.0"
