@@ -20,7 +20,7 @@ function createWindow() {
     }
   });
 
-  mainWindow.maximize();
+  mainWindow.setFullScreen(true);
   mainWindow.setResizable(false);
 
   // and load the index.html of the app.
