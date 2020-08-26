@@ -23,11 +23,16 @@
         "AppImage"
       ],
       "category": "Utility"
+    },
+    "win": {
+      "target": [
+        "portable"
+      ]
     }
   },
   "repository": "https://github.com/caycehouse/policy-banner-ecu.git",
-  "author": "caycehouse",
   "license": "GPL-3.0-or-later",
+  "author": "ECU ITCS",
   "devDependencies": {
     "electron": "^9.2.0",
     "electron-builder": "^22.8.0"
