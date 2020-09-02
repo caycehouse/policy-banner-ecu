@@ -36,5 +36,8 @@
   "devDependencies": {
     "electron": "^9.2.0",
     "electron-builder": "^22.8.0"
+  },
+  "dependencies": {
+    "username": "^5.1.0"
   }
 }
