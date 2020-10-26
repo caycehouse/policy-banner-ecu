@@ -29,7 +29,7 @@
   "author": "caycehouse",
   "license": "GPLv3",
   "devDependencies": {
-    "electron": "^10.1.4",
+    "electron": "^10.1.5",
     "electron-builder": "^22.9.1"
   }
 }
