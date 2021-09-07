@@ -46,7 +46,7 @@
   "devDependencies": {
     "@doyensec/electronegativity": "^1.9.0",
     "@types/electron-json-storage": "^4.5.0",
-    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/eslint-plugin": "^4.0.0",
     "@typescript-eslint/parser": "^3.4.0",
     "commander": "^8.1.0",
     "electron": "^13.1.1",
