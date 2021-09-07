@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+
+<body id="app">
+  <img src="logo.png" />
+  <h1 id="title1"></h1>
+  <h1 id="title2"></h1>
+  <h3 id="title3"></h3>
+  <h4 id="title4"></h4>
+  <i id="body"></i>
+  <button id="closeApp">Accept</button>
+  <script src="build/renderer.js"></script>
+</body>
+
+</html>

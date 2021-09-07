@@ -1,0 +1,51 @@
+body {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+  text-align: center;
+  padding: 0 25px;
+}
+
+button {
+  background-color: rgb(90, 45, 127);
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+i {
+  display: block;
+}
+
+h1 {
+  color: rgb(90, 45, 127);
+}
+
+h3 {
+  color: rgb(255, 200, 46);
+}
+
+h4 {
+  color: rgb(217, 83, 79);
+  font-size: 14px;
+}
+
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  width: 300px;
+}

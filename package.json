@@ -1,0 +1,61 @@
+{
+  "name": "policy-banner-ecu",
+  "version": "1.0.0",
+  "description": "A policy banner app for East Carolina University",
+  "main": "build/main.js",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "eslint -c .eslintrc --ext .ts ./src",
+    "start": "npm run build && electron ./build/main.js",
+    "electronegativity": "electronegativity -i ./src",
+    "pack": "npm run build && electron-builder -mwl --dir",
+    "dist": "npm run build && electron-builder -mwl",
+    "postinstall": "electron-builder install-app-deps"
+  },
+  "build": {
+    "appId": "edu.ecu.policy-banner-ecu",
+    "productName": "policy-banner-ecu",
+    "directories":{
+      "buildResources": "assets"
+    },
+    "mac": {
+      "category": "public.app-category.utilities",
+      "identity": null
+    },
+    "files": [
+      "index.html",
+      "index.css",
+      "logo.png",
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "dmg": {
+      "icon": false
+    },
+    "linux": {
+      "target": [
+        "AppImage"
+      ],
+      "category": "Utility"
+    }
+  },
+  "repository": "https://github.com/caycehouse/policy-banner-ecu",
+  "author": "caycehouse",
+  "license": "MIT",
+  "devDependencies": {
+    "@doyensec/electronegativity": "^1.9.0",
+    "@types/electron-json-storage": "^4.5.0",
+    "@typescript-eslint/eslint-plugin": "^3.4.0",
+    "@typescript-eslint/parser": "^3.4.0",
+    "commander": "^8.1.0",
+    "electron": "^13.1.1",
+    "electron-builder": "^22.11.7",
+    "eslint": "^7.3.1",
+    "typescript": "^3.9.5"
+  },
+  "dependencies": {
+    "electron-json-storage": "^4.5.0",
+    "username": "^5.1.0"
+  }
+}
