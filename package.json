@@ -1,6 +1,6 @@
 {
   "name": "policy-banner-ecu",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A policy banner app for East Carolina University",
   "main": "build/main.js",
   "scripts": {
