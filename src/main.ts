@@ -7,24 +7,11 @@ import * as storage from "electron-json-storage";
 import * as os from 'os';
 import * as fs from 'fs';
 
-const appFolder = path.dirname(process.execPath)
-const updateExe = path.resolve(appFolder, '..', 'Update.exe')
-const exeName = path.basename(process.execPath)
-
 if (process.platform === "darwin") {
   storage.setDataPath("/usr/local/ECU/policy-banner-ecu");
 } else {
   storage.setDataPath("C:\\ITCS\\policy-banner-ecu");
 }
-
-app.setLoginItemSettings({
-  openAtLogin: true,
-  path: updateExe,
-  args: [
-    '--processStart', `"${exeName}"`,
-    '--process-start-args', `"--hidden"`
-  ]
-})
 
 function createWindow(session: Session) {
   // Create the browser window.
