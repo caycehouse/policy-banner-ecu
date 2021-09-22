@@ -1,6 +1,6 @@
 {
   "name": "policy-banner-ecu",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A policy banner app for East Carolina University",
   "main": "build/main.js",
   "scripts": {
@@ -40,7 +40,10 @@
       "category": "Utility"
     },
     "nsis": {
-      "perMachine": true
+      "perMachine": true,
+      "createDesktopShortcut": false,
+      "createStartMenuShortcut": false,
+      "runAfterFinish": false
     }
   },
   "repository": "https://github.com/caycehouse/policy-banner-ecu",
