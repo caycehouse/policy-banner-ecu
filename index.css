@@ -49,3 +49,7 @@ img {
   -ms-user-select: none;
   width: 300px;
 }
+
+#body {
+  font-size: 12px;
+}
