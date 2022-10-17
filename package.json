@@ -61,7 +61,7 @@
     "typescript": "^3.9.5"
   },
   "dependencies": {
-    "electron-json-storage": "^4.5.0",
+    "electron-json-storage": "^4.6.0",
     "username": "^5.1.0"
   }
 }
